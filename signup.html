@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FoodieDelight - Sign Up</title>
+    <meta
+      name="description"
+      content="Create a FoodieDelight account to personalise your food ordering experience."
+    />
+    
+    <!-- style.css link-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- responsive.css  -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- header start -->
+    <div id="header"></div>
+    <!-- header end -->
+
+    <!-- main start ============================== -->
+    <main>
+      <section class="signup-section">
+        <div class="container">
+          <div class="signup-container">
+            <div class="signup-logo">
+              <img src="./assets/images/logo.png" alt="FoodieDelight Logo">
+              <h2>Create Your Account</h2>
+            </div>
+            
+            <form class="signup-form">
+              <div class="input-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="Enter your full name" required>
+              </div>
+              
+              <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+              </div>
+              
+              <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+              </div>
+              
+              <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+              </div>
+              
+              <button type="submit" class="btn-primary">Sign Up</button>
+              
+              <p>
+                Already have an account? 
+                <a href="signin.html" class="link">Sign In</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main END ============================== -->
+
+    <!-- footer start -->
+    <div id="footer"></div>
+    <!-- footer end -->
+    
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

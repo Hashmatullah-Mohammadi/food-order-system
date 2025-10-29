@@ -1,0 +1,277 @@
+/* ===== RESPONSIVE HEADER STYLES ===== */
+
+/* For tablets and small desktops */
+@media (max-width: 992px) {
+  .nav-item {
+    margin: 0 5px;
+  }
+  
+  .nav-link {
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  
+  .btn-order {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  
+  .section-header,
+  .features-grid {
+    width: 100%;
+  }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+  .nav-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background: linear-gradient(135deg, #2c3e50, #1a1a2e);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
+    padding: 20px 0;
+  }
+  
+  body.light-theme .nav-menu {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-item {
+    margin: 10px 0;
+  }
+  
+  .nav-link {
+    padding: 15px;
+    display: block;
+  }
+  
+  .nav-link::after {
+    display: none;
+  }
+  
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+    margin-top: 10px;
+  }
+  
+  body.light-theme .dropdown-menu {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-link {
+    text-align: center;
+  }
+  
+  .nav-icons {
+    margin: 15px 0;
+    justify-content: center;
+  }
+  
+  .nav-button {
+    margin: 20px 0;
+  }
+  
+  .btn-order {
+    padding: 12px 30px;
+  }
+  
+  .hamburger {
+    display: flex;
+    margin-left: 15px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .footer-section ul li {
+    justify-content: center;
+  }
+  
+  .footer-section.contact ul li {
+    justify-content: flex-start;
+  }
+  
+  .section-header,
+  .features-grid {
+    width: 100%;
+  }
+  
+  .footer-bottom {
+    width: 100%;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+    width: 100%;
+  }
+  
+  .nav-logo img {
+    height: 40px;
+  }
+  
+  .nav-icons {
+    gap: 10px;
+  }
+  
+  .nav-icon,
+  .theme-toggle {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+  
+  .btn-order {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .footer {
+    padding: 50px 0 0;
+  }
+  
+  .footer-content {
+    gap: 40px;
+    width: 100%;
+  }
+  
+  .footer-logo {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .section-header,
+  .features-grid {
+    width: 100%;
+  }
+  
+  .footer-bottom {
+    width: 100%;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+  .nav-logo img {
+    height: 35px;
+  }
+  
+  .nav-link {
+    font-size: 14px;
+    padding: 12px;
+  }
+  
+  .nav-icon,
+  .theme-toggle {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  .btn-order {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+  }
+  
+  .footer-section ul li {
+    font-size: 14px;
+  }
+  
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .footer-content {
+    width: 100%;
+  }
+  
+  .section-header,
+  .features-grid {
+    width: 100%;
+  }
+  
+  .footer-bottom {
+    width: 100%;
+  }
+}
+
+/* ===== HAMBURGER ANIMATION ===== */
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
