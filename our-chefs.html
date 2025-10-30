@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodieDelight - Our Chefs</title>
+
+    <!-- style.css link-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- responsive.css  -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <!-- header start -->
+    <div id="header"></div>
+    <!-- header end -->
+    
+    <!-- main start ============================== -->
+    <main>
+      <!-- hero section start -->
+      <section class="hero-slideshow">
+        <div class="slideshow-container">
+          <!-- Slide 1 -->
+          <div class="slide fade active">
+            <div class="slide-content">
+              <h1>Meet Our Master Chefs</h1>
+              <p>Passionate culinary artists dedicated to creating exceptional dining experiences with years of expertise and innovative techniques</p>
+              <div class="hero-buttons">
+                <button class="btn-primary" onclick="window.location.href='./order.html'">Order Now</button>
+                <button class="btn-secondary" onclick="window.location.href='#chefs'">Meet Our Chefs</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Slide 2 -->
+          <div class="slide fade">
+            <div class="slide-content">
+              <h1>Culinary Excellence</h1>
+              <p>Our chefs combine traditional techniques with innovative approaches to create memorable dining experiences that delight your senses</p>
+              <div class="hero-buttons">
+                <button class="btn-primary" onclick="window.location.href='./order.html'">View Menu</button>
+                <button class="btn-secondary" onclick="window.location.href='#philosophy'">Our Philosophy</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Slide 3 -->
+          <div class="slide fade">
+            <div class="slide-content">
+              <h1>Artistry in Every Dish</h1>
+              <p>Experience the finest culinary creations crafted by our award-winning chefs using the freshest ingredients and seasonal produce</p>
+              <div class="hero-buttons">
+                <button class="btn-primary" onclick="window.location.href='./order.html'">Book a Table</button>
+                <button class="btn-secondary" onclick="window.location.href='#specialties'">Chef Specialties</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Navigation arrows -->
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        
+        <!-- Dots indicator -->
+        <div class="dots-container">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+      <!-- hero section end -->
+
+      <!-- chefs section start -->
+      <section class="chefs-section" id="chefs">
+        <div class="container">
+          <div class="section-header">
+            <h2>Meet Our Master Chefs</h2>
+            <p>Passionate culinary artists dedicated to creating exceptional dining experiences</p>
+          </div>
+          
+          <div class="chefs-grid">
+            <!-- Chef 1 -->
+            <div class="chef-card">
+              <div class="chef-image">
+                <img src="./assets/images/chefsp1.jpeg" alt="Chef Alexander">
+                <div class="chef-overlay">
+                  <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chef-info">
+                <h3>Chef Alexander</h3>
+                <p class="chef-title">Executive Chef</p>
+                <p class="chef-bio">With over 15 years of experience in fine dining, Chef Alexander specializes in contemporary cuisine with international influences.</p>
+                <div class="chef-specialties">
+                  <span class="specialty">French Cuisine</span>
+                  <span class="specialty">Seafood</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Chef 2 -->
+            <div class="chef-card">
+              <div class="chef-image">
+                <img src="./assets/images/chefsp2.jpeg" alt="Chef Maria">
+                <div class="chef-overlay">
+                  <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chef-info">
+                <h3>Chef Maria</h3>
+                <p class="chef-title">Pastry Chef</p>
+                <p class="chef-bio">Chef Maria brings creativity and precision to our dessert menu, crafting exquisite pastries and confections that delight the senses.</p>
+                <div class="chef-specialties">
+                  <span class="specialty">Desserts</span>
+                  <span class="specialty">Baking</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Chef 3 -->
+            <div class="chef-card">
+              <div class="chef-image">
+                <img src="./assets/images/chefsp3.jpeg" alt="Chef James">
+                <div class="chef-overlay">
+                  <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chef-info">
+                <h3>Chef James</h3>
+                <p class="chef-title">Sous Chef</p>
+                <p class="chef-bio">Chef James oversees our daily operations with expertise in fusion cuisine and sustainable cooking practices.</p>
+                <div class="chef-specialties">
+                  <span class="specialty">Fusion</span>
+                  <span class="specialty">Vegetarian</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Chef 4 -->
+            <div class="chef-card">
+              <div class="chef-image">
+                <img src="./assets/images/chefsp4.jpeg" alt="Chef Sophia">
+                <div class="chef-overlay">
+                  <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chef-info">
+                <h3>Chef Sophia</h3>
+                <p class="chef-title">Grill Master</p>
+                <p class="chef-bio">Specializing in grilled specialties and wood-fired dishes, Chef Sophia brings bold flavors and innovative techniques to our menu.</p>
+                <div class="chef-specialties">
+                  <span class="specialty">Grilling</span>
+                  <span class="specialty">BBQ</span>
+                </div>
+              </div>
+            </div>
+
+             <!-- Chef 4 -->
+            <div class="chef-card">
+              <div class="chef-image">
+                <img src="./assets/images/chefsp5.jpeg" alt="Chef Sophia">
+                <div class="chef-overlay">
+                  <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chef-info">
+                <h3>Chef Sophia</h3>
+                <p class="chef-title">Grill Master</p>
+                <p class="chef-bio">Specializing in grilled specialties and wood-fired dishes, Chef Sophia brings bold flavors and innovative techniques to our menu.</p>
+                <div class="chef-specialties">
+                  <span class="specialty">Grilling</span>
+                  <span class="specialty">BBQ</span>
+                </div>
+              </div>
+            </div>
+             <!-- Chef 4 -->
+            <div class="chef-card">
+              <div class="chef-image">
+                <img src="./assets/images/chefsp6.jpeg" alt="Chef Sophia">
+                <div class="chef-overlay">
+                  <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="chef-info">
+                <h3>Chef Sophia</h3>
+                <p class="chef-title">Marino chef</p>
+                <p class="chef-bio">Specializing in grilled specialties and wood-fired dishes, Chef Sophia brings bold flavors and innovative techniques to our menu.</p>
+                <div class="chef-specialties">
+                  <span class="specialty">Grilling</span>
+                  <span class="specialty">BBQ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- chefs section end -->
+      
+      <!-- chef philosophy section start -->
+      <section class="philosophy-section" id="philosophy">
+        <div class="container">
+          <div class="philosophy-content">
+            <div class="philosophy-text">
+              <h2>Our Culinary Philosophy</h2>
+              <p>At FoodieDelight, we believe that exceptional food is crafted through passion, precision, and the finest ingredients. Our chefs combine traditional techniques with innovative approaches to create memorable dining experiences.</p>
+              <p>Each dish tells a story, reflecting our commitment to quality, sustainability, and culinary excellence. We source locally whenever possible and work directly with farmers and producers who share our values.</p>
+              <div class="philosophy-stats">
+                <div class="stat-item">
+                  <h3>15+</h3>
+                  <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                  <h3>50+</h3>
+                  <p>Signature Dishes</p>
+                </div>
+                <div class="stat-item">
+                  <h3>100%</h3>
+                  <p>Fresh Ingredients</p>
+                </div>
+              </div>
+            </div>
+            <div class="philosophy-image">
+              <img src="./assets/images/kichen.jpeg" alt="Our Kitchen">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- chef philosophy section end -->
+    </main>
+
+    <!-- main END ============================== -->
+
+    <!-- footer start -->
+    <div id="footer"></div>
+    <!-- footer end -->
+   
+    <script src="./assets/js/script.js"></script>
+    <script>
+      // Slideshow functionality
+      let slideIndex = 0;
+      const slides = document.querySelectorAll('.slide');
+      const dots = document.querySelectorAll('.dot');
+      
+      // Initialize slideshow
+      document.addEventListener('DOMContentLoaded', function() {
+        showSlides();
+      });
+      
+      // Change slide manually
+      function changeSlide(n) {
+        slideIndex += n;
+        if (slideIndex >= slides.length) { slideIndex = 0; }
+        if (slideIndex < 0) { slideIndex = slides.length - 1; }
+        showSlides();
+      }
+      
+      // Go to specific slide
+      function currentSlide(n) {
+        slideIndex = n - 1;
+        showSlides();
+      }
+      
+      // Show slides with fade effect
+      function showSlides() {
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].classList.remove('active');
+          dots[i].classList.remove('active');
+        }
+        
+        // Show current slide
+        slides[slideIndex].classList.add('active');
+        dots[slideIndex].classList.add('active');
+      }
+      
+      // Auto-advance slides every 5 seconds
+      setInterval(function() {
+        slideIndex++;
+        if (slideIndex >= slides.length) { slideIndex = 0; }
+        showSlides();
+      }, 5000);
+      
+      // Add animation classes when elements are in viewport
+      document.addEventListener('DOMContentLoaded', function() {
+        // Animate chef cards when they come into view
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        }, { threshold: 0.1 });
+        
+        // Observe chef cards
+        document.querySelectorAll('.chef-card').forEach(card => {
+          card.style.opacity = "0";
+          card.style.transform = "translateY(30px)";
+          card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+          observer.observe(card);
+        });
+        
+        // Observe philosophy section
+        const philosophySection = document.querySelector('.philosophy-section');
+        if (philosophySection) {
+          philosophySection.style.opacity = "0";
+          philosophySection.style.transform = "translateY(40px)";
+          philosophySection.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+          observer.observe(philosophySection);
+        }
+        
+        // Add hover effect to chef cards
+        document.querySelectorAll('.chef-card').forEach(card => {
+          card.addEventListener('mouseenter', function() {
+            this.style.transform = "translateY(-10px)";
+          });
+          
+          card.addEventListener('mouseleave', function() {
+            this.style.transform = "translateY(0)";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
